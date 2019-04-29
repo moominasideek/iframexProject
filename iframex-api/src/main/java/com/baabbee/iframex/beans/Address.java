@@ -18,10 +18,9 @@ public class Address {
 	}
 	
 	
-	public Address(String id, String addressLine1, String addressLine2, String city, String zipcode, String state,
+	public Address(String addressLine1, String addressLine2, String city, String zipcode, String state,
 			String country) {
 		super();
-//		this.id = id;
 		this.addressLine1 = addressLine1;
 		this.addressLine2 = addressLine2;
 		this.city = city;

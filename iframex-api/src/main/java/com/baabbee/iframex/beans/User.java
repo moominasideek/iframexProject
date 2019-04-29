@@ -46,10 +46,6 @@ public class User {
 	
 	@Embedded
 	private Address address;
-
-	@OneToMany//(cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id")
-	private Set<UserRequest> userRequests = new HashSet<UserRequest>();
 	
 	public User() {
 		
@@ -59,7 +55,6 @@ public class User {
 		this.id = id;
 		this.name = name;
 		this.address = address;
-		this.userRequests = userRequests;
 	}
 	public Long getId() {
 		return id;
@@ -102,13 +97,6 @@ public class User {
 	}
 	public void setAddress(Address address) {
 		this.address = address;
-	}
-	
-	public Set<UserRequest> getUserRequests() {
-		return userRequests;
-	}
-	public void setUserRequests(Set<UserRequest> userRequests) {
-		this.userRequests = userRequests;
 	}
 	@Override
 	public String toString() {

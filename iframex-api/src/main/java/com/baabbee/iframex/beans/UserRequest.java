@@ -1,6 +1,5 @@
 package com.baabbee.iframex.beans;
 
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
@@ -47,7 +46,7 @@ public class UserRequest {
 	@Column(name = "last_modified_date")
 	private Date lastModifiedDate;
 	
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "user_id")
 	private User user;
 
