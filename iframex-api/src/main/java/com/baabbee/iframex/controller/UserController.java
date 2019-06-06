@@ -13,6 +13,7 @@ import com.baabbee.iframex.beans.User;
 import com.baabbee.iframex.service.UserService;
 
 @RestController
+@RequestMapping("/iframex")
 public class UserController {
 	
 	@Autowired

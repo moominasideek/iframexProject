@@ -13,6 +13,7 @@ import com.baabbee.iframex.beans.FrameRequest;
 import com.baabbee.iframex.service.FrameRequestService;
 
 @RestController
+@RequestMapping("/iframex")
 public class FrameRequestController {
 	
 	@Autowired

@@ -1,7 +1,6 @@
 package com.baabbee.iframex.beans;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Id;
 
 @Embeddable
 public class Address {

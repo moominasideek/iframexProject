@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.baabbee.iframex.beans.User;
 import com.baabbee.iframex.beans.UserRequest;
 import com.baabbee.iframex.service.UserRequestService;
 
 @RestController
+@RequestMapping("/iframex")
 public class UserRequestController {
 	
 	@Autowired
